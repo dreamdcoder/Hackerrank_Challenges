@@ -3,11 +3,11 @@ from collections import OrderedDict
 # If a new entry overwrites an existing entry, the original insertion position is left unchanged.
 
 if __name__ == "__main__":
-    n= int(input())
+    n = int(input())
 
     bill = OrderedDict()
     for _ in range(n):
-        item_details = input()
+        item_details = input() # rpartion will save if else part
         if item_details.count(" ") == 1:
             item, price = item_details.split()
         elif item_details.count(" ") == 2:
